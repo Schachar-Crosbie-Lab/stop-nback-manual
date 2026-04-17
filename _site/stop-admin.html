@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Stop Task Administration – Stop &amp; NBack Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Stop &amp; NBack Guide</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./technical-manual.html"> 
+<span class="menu-text">Technical Manual</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./stop-admin.html" aria-current="page"> 
+<span class="menu-text">Stop Task Administration</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./nback-admin.html"> 
+<span class="menu-text">N-Back Task Administration</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data-transfer.html"> 
+<span class="menu-text">Data Transfer</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Crosbie Lab</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#simple-stop-task-summary" id="toc-simple-stop-task-summary" class="nav-link active" data-scroll-target="#simple-stop-task-summary"><span class="header-section-number">1</span> <strong>Simple Stop Task Summary</strong></a></li>
+  <li><a href="#general-instructions" id="toc-general-instructions" class="nav-link" data-scroll-target="#general-instructions"><span class="header-section-number">2</span> <strong>General Instructions</strong></a></li>
+  <li><a href="#setting-up-the-task" id="toc-setting-up-the-task" class="nav-link" data-scroll-target="#setting-up-the-task"><span class="header-section-number">3</span> <strong>Setting Up the Task</strong></a></li>
+  <li><a href="#administer-the-task-to-a-participant" id="toc-administer-the-task-to-a-participant" class="nav-link" data-scroll-target="#administer-the-task-to-a-participant"><span class="header-section-number">4</span> <strong>Administer the Task to a Participant</strong></a>
+  <ul class="collapse">
+  <li><a href="#practice-block" id="toc-practice-block" class="nav-link" data-scroll-target="#practice-block"><span class="header-section-number">4.1</span> <strong>Practice Block:</strong></a></li>
+  <li><a href="#provide-corrective-feedback-to-a-participant" id="toc-provide-corrective-feedback-to-a-participant" class="nav-link" data-scroll-target="#provide-corrective-feedback-to-a-participant"><span class="header-section-number">4.2</span> <strong>Provide Corrective Feedback to a Participant</strong></a></li>
+  </ul></li>
+  <li><a href="#printable-stop-task-cheat-sheet" id="toc-printable-stop-task-cheat-sheet" class="nav-link" data-scroll-target="#printable-stop-task-cheat-sheet"><span class="header-section-number">5</span> Printable Stop Task Cheat Sheet</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Stop Task Administration</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Ensure installation steps outlined in <a href="./technical-manual.html">Technical and Interpretive Manual</a> are completed prior to administration</p>
+<section id="simple-stop-task-summary" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="simple-stop-task-summary"><span class="header-section-number">1</span> <strong>Simple Stop Task Summary</strong></h2>
+<p><strong>Administration time:</strong> approximately 10 minutes (2 minutes per block).</p>
+<p>What we are trying to calculate is what is known as Stop Signal Reaction Time (SSRT) which reflects the latency of the stopping process. SSRT cannot be measured directly because there is no overt response that latency of which can be measured when you stop doing something.</p>
+<p>The task will run for <strong>4 experimental blocks and 1 practice block, with 24 trials per block</strong>. The task will pause after each block and a message will appear. If the screen is black the participant can press X or O to continue on to the next block. If the screen is white you need to provide corrective feedback to them (see instructions below) and then press 8 on the keyboard to allow them to continue.</p>
+<p>Note: To launch the Stop Task from the Desktop, instead of having to enter the SchacharLabTaskFolder_v6.3.1Folder each time you run a participant, create a PsychExp shortcut on the Desktop from the Task Folder (steps available in Technical Manual).</p>
+</section>
+<section id="general-instructions" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="general-instructions"><span class="header-section-number">2</span> <strong>General Instructions</strong></h2>
+<ol type="1">
+<li><p>Explain the instructions for each task, <strong>verbatim</strong>, to the child as described in this manual.</p></li>
+<li><p>Position yourself so that you can see the participant’s actions throughout the task and <strong>do not leave the child unattended at any time!</strong> Sit beside the child while they are completing the computer tasks to ensure that they are focused and following instructions.</p></li>
+<li><p>During the <strong>practice block</strong>, watch and see if the child is executing the task correctly. If the child is making errors during the practice, <strong>point out the error promptly and instruct the child again</strong>. A second practice is required if the child is having difficulty</p></li>
+<li><p>Once the child begins the test blocks, the most appropriate time to <strong>recap the instructions is when the task pauses after each block</strong>. Continue to recap the instructions after every block as needed.</p></li>
+<li><p>Children tire easily of these tasks because they are repetitive. Always try and <strong>encourage them to complete the task</strong>. They may take breaks in between the blocks to rest.</p></li>
+<li><p>When the child has completed the entire task, <strong>examine the test scores</strong> summary sheet once again to ensure that the child has completed the task correctly and that there were no computer errors.</p></li>
+</ol>
+</section>
+<section id="setting-up-the-task" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="setting-up-the-task"><span class="header-section-number">3</span> <strong>Setting Up the Task</strong></h2>
+<p><strong>Materials:</strong> &nbsp;</p>
+<ul>
+<li><strong>Laptop</strong> with PsychExp setup (see <a href="./technical-manual.html">Technical and Interpretive Manual</a>)</li>
+<li><strong>Laptop Charger</strong></li>
+<li><strong>Game Controller</strong></li>
+<li><strong>Quiet Room</strong>&nbsp;</li>
+</ul>
+<ol type="1">
+<li><p>Check the <strong>date</strong> and the <strong>time</strong> on the laptop to ensure they are accurate</p></li>
+<li><p>Apply the following settings to turn off the background processes that will interfere with the task:</p>
+<ul>
+<li><p>Turn on Airplane Mode</p></li>
+<li><p>Turn off Virus &amp; Threat Protection functions</p></li>
+</ul></li>
+</ol>
+<p>This process must be completed <strong>every time</strong> the task is administered&nbsp;</p>
+<ol start="3" type="1">
+<li><p>Plug in charger regardless of battery level and game controller</p></li>
+<li><p>Double click <strong>PsychExp</strong></p></li>
+<li><p>Click Simple Stop and then <strong>Run</strong>.</p></li>
+<li><p>Enter the <strong>Participant ID</strong> (at the bottom of the screen), then click <strong>Go</strong>.</p></li>
+<li><p>Click <strong>Run</strong>.</p>
+<ul>
+<li><p>If a dialogue box with the message <em>“One or more of the log or output files already exist. Continue anyway?”</em> appears, click <strong>Yes</strong>.</p></li>
+<li><p>If a dialogue box with the message <em>“stopsignal has already been run with subject ID XXX. Do you wish to continue?”</em> appears, this indicates the data for the ID will be <strong>overwritten</strong>, ensure this is acceptable if clicking <strong>yes</strong> otherwise click <strong>no</strong> and enter a different ID</p></li>
+</ul></li>
+</ol>
+<p><strong>Important Controls:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Button</strong>&nbsp;</td>
+<td><strong>Actions</strong>&nbsp;</td>
+<td><strong>When to Use</strong>&nbsp;</td>
+</tr>
+<tr class="even">
+<td><strong>X</strong></td>
+<td>Correct response</td>
+<td>When a participant sees an X (and doesn’t hear a beep)</td>
+</tr>
+<tr class="odd">
+<td><strong>O</strong></td>
+<td>Correct response</td>
+<td>When a participant sees an O (and doesn’t hear a beep)</td>
+</tr>
+<tr class="even">
+<td><strong>8</strong></td>
+<td>Continue the task</td>
+<td>When a white screen appear after providing feedback to a participant.</td>
+</tr>
+<tr class="odd">
+<td><strong>P</strong></td>
+<td>Pauses the task</td>
+<td>Use when a participant needs a break during a block or if they put down the controller, etc.</td>
+</tr>
+<tr class="even">
+<td><strong>R</strong>&nbsp;</td>
+<td>Resumes the task</td>
+<td>Use when you have manually paused the task and the participant is ready to continue&nbsp;</td>
+</tr>
+<tr class="odd">
+<td><strong>Esc</strong></td>
+<td>Exits the task</td>
+<td>Use when a participant refuses to finish the task after you have tried to encourage them.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="administer-the-task-to-a-participant" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="administer-the-task-to-a-participant"><span class="header-section-number">4</span> <strong>Administer the Task to a Participant</strong></h2>
+<ol type="1">
+<li><p>Give participant the game controller</p></li>
+<li><p>Provide the following instructions <strong>verbally (verbatim)</strong>:</p>
+<ul>
+<li><p>You will see either an X or an O appear in the middle of the screen</p></li>
+<li><p>When you see an X, I want you to press the <strong>top left button</strong> (point to the corresponding button on the controller)</p></li>
+<li><p>When you see an O, I want you press the <strong>top right button</strong> (point to the corresponding button on the controller)</p></li>
+<li><p>Sometimes you will hear a beep. When you hear the beep, don’t press anything</p></li>
+<li><p>Let’s check, when you see an X what do you press? [participant points to X button], when we you an O what do you press [participant points to O button], and when you hear a beep, what do you do [don’t press anything]</p></li>
+<li><p><strong>Go as fast as you can, try not to make mistakes</strong>, and <strong>don’t wait for the beep.</strong></p></li>
+<li><p>Do you have any questions?</p></li>
+</ul></li>
+<li><p>Click <strong>Run Scenario</strong>.</p></li>
+<li><p>Audio Instructions will then start to re-explain the task.</p></li>
+<li><p>When ready, press <strong>Enter</strong> to start the task.</p></li>
+</ol>
+<section id="practice-block" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="practice-block"><span class="header-section-number">4.1</span> <strong>Practice Block:</strong></h3>
+<ul>
+<li><p>The first block is a “pre-experimental block” in that none of the responses are saved. But it is imperative that the participant plays this round correctly to ensure valid scores for the next 4 experimental blocks.</p></li>
+<li><p>If after the practice block a white screen appears press ‘esc’ to cancel the task and <strong>re-start the task</strong>.</p></li>
+<li><p>Watch the participant closely and <strong>provide feedback (see table below) between blocks when necessary.</strong></p></li>
+<li><p><strong>Black Screen:</strong> participant playing correctly, no feedback required</p></li>
+<li><p><strong>White Screen:</strong> participant playing incorrectly, provide feedback</p></li>
+<li><p>When the task finishes, a <strong>Thank You</strong> screen appears. Press <strong>X or O one more time</strong> to close the screen. <strong>DO NOT</strong> press escape to end the task as you may lose data.</p></li>
+<li><p>In the dialogue box, press <strong>Continue</strong>, then <strong>Finish</strong>. At this point you can close out of Presentation.</p></li>
+</ul>
+<p><strong><em>Children may easily tire of the task and require close monitoring and encouragement when breaks in the task allow for it.</em></strong></p>
+</section>
+<section id="provide-corrective-feedback-to-a-participant" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="provide-corrective-feedback-to-a-participant"><span class="header-section-number">4.2</span> <strong>Provide Corrective Feedback to a Participant</strong></h3>
+<p>White screens with text appear between blocks when the game determines the participant is playing incorrectly. The black and white screens between the blocks will also show you the participant’s scores for each round.&nbsp;&nbsp;</p>
+<ul>
+<li><p><strong>PCR:</strong> percent correct responses – how often they are correctly pressing X and O</p></li>
+<li><p>Should be <strong>above 66%</strong></p></li>
+<li><p><strong>PSI:</strong> percent stop inhibition – how often they are inhibiting when they hear a beep</p></li>
+<li><p>should be in between <strong>12.5% to 87.5%</strong></p></li>
+<li><p><strong>SSRT:</strong> stop signal reaction time – latency of the stopping process</p></li>
+<li><p><strong>MCRT:</strong> mean reaction time – how fast they are responding when they see an X or O</p></li>
+<li><p>should be <strong>below 500ms</strong>&nbsp;</p></li>
+</ul>
+<p>The messages that you will see are:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>White Screen Trigger</strong></td>
+<td><strong>Text on White Screen</strong></td>
+<td><strong>What Participant is likely doing Wrong</strong></td>
+<td><strong>Feedback to be provided to Participant</strong></td>
+</tr>
+<tr class="even">
+<td>There are <strong>0 go trials with responses, or 0 stop trials</strong></td>
+<td><strong>No responses were detected</strong>.</td>
+<td>Participant <strong>did not press</strong> the X nor the O button or they may be pressing the <strong>wrong buttons</strong> on the controller.</td>
+<td>Review buttons with participant and remind participant to press X or O buttons when prompted.</td>
+</tr>
+<tr class="odd">
+<td>If the <strong>percent of correct responses</strong> on go trials &lt;= 50%</td>
+<td><strong>You may be pressing the wrong button.</strong></td>
+<td>Participant likely <strong>mixing up</strong> the X and O buttons or pressing the wrong buttons.</td>
+<td>Review buttons with participant.</td>
+</tr>
+<tr class="even">
+<td>If the <strong>MCRT time has changed</strong> since the last block by +/-150ms</td>
+<td><strong>Don’t forget to go as fast as you can without pressing the wrong button.</strong></td>
+<td>Participant likely pressed button <strong>after</strong> the X/O disappeared from the screen.</td>
+<td>Remind participant to go as fast as they can and to not press when they hear a beep.</td>
+</tr>
+<tr class="odd">
+<td>The <strong>percent stop inhibition</strong> is &lt; 12.5 or &gt; 87.5</td>
+<td><strong>Don’t forget to go fast and stop when you hear a beep.</strong></td>
+<td>Participant is <strong>waiting too long</strong> to press the X or O button (i.e.: waiting to see if beep will come).</td>
+<td>Remind participant to go as fast as they can and to not wait for the beep.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="printable-stop-task-cheat-sheet" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="printable-stop-task-cheat-sheet"><span class="header-section-number">5</span> Printable Stop Task Cheat Sheet</h2>
+<p></p><div><object data="stop-task-cheat-sheet.pdf" type="application/pdf" width="100%" height="500px"><a href="stop-task-cheat-sheet.pdf" download="">Download PDF file.</a></object><br><a href="stop-task-cheat-sheet.pdf" download="" style="display:inline-block; padding:10px 18px; background-color:#007acc; color:white; font-size:15px; border:none; border-radius:6px; cursor:pointer; text-decoration:none; transition:background-color 0.2s ease;" onmouseover="this.style.backgroundColor='#005fa3';" onmouseout="this.style.backgroundColor='#007acc';">Download</a></div><p></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Copyright Dr. Russell Schachar, 2002-2013 <br> Version date: March 2026 <br> Not to be distributed outside approved research team members
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

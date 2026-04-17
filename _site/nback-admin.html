@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>N-Back Task Administration – Stop &amp; NBack Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Stop &amp; NBack Guide</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./technical-manual.html"> 
+<span class="menu-text">Technical Manual</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./stop-admin.html"> 
+<span class="menu-text">Stop Task Administration</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./nback-admin.html" aria-current="page"> 
+<span class="menu-text">N-Back Task Administration</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data-transfer.html"> 
+<span class="menu-text">Data Transfer</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Crosbie Lab</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">N-Back Task Administration</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>N-Back Computer Task</strong> &nbsp;</p>
+<p><strong>Administration Manual</strong>&nbsp;</p>
+<p>Complete installation steps outlined in <strong>Technical and Interpretive Manual</strong> prior to administration&nbsp;</p>
+<p><strong>Page 2: The N-Back Task</strong> &nbsp;</p>
+<p><strong>Page 3: General Instructions for Administering Computer Tasks</strong>&nbsp;</p>
+<p><strong>Page 4: Prepping the Program</strong>&nbsp;</p>
+<p><strong>Page 5: Administering the Task to a Participant 1-Back</strong>&nbsp;</p>
+<p><strong>Page 7: Administering the Task to a Participant 2-Back</strong>&nbsp;</p>
+<p><strong>Preamble</strong>&nbsp;</p>
+<p>We suggest running yourself and other staff on the task a number of times. We are happy to look at the data if you send us the files. We extend this offer in an effort to ensure that the task properly operates and scores data. Please send files to <strong>Crosbie Lab (<a href="mailto:crosbielab.admin@sickkids.ca">crosbielab.admin@sickkids.ca</a>)</strong>&nbsp;</p>
+<p><strong>The N-Back Task</strong>&nbsp;</p>
+<p><strong>Administration time:</strong> approximately 8 minutes (2 minutes per block).&nbsp;</p>
+<p>ALWAYS position yourself so that you can see the participant’s actions to ensure they are following the directions by pressing the correct buttons.&nbsp;</p>
+<p>The task will run for <strong>3 blocks experimental blocks and 1 practice block, with 40 trials per block</strong>. The task will pause after each block and a message will appear. Press enter on the keyboard to continue.&nbsp;&nbsp;</p>
+<p>Note: To launch the N-Back Task from the Desktop, instead of having to enter the SchacharLabTaskFolder_v6.3.1Folder each time you run a participant, create a PsychExp shortcut on the Desktop from the Task Folder (steps available in Technical Manual).&nbsp;</p>
+<p><strong>General Instructions for Administering Computer Tasks</strong>&nbsp;</p>
+<ol type="1">
+<li><p>Explain the instructions for each task, <strong>verbatim</strong>, to the child as described in this manual.</p></li>
+<li><p>During the <strong>practice block</strong>, watch and see if the child is executing the task correctly. If the child is making errors during the practice, <strong>point out the error promptly and instruct the child again</strong>. A second practice is required if the child is having difficulty.</p></li>
+<li><p>Once the child begins the test blocks, the most appropriate time to <strong>recap the instructions is when the task pauses after each block</strong>. Continue to recap the instructions after every block as needed.</p></li>
+<li><p><strong>Do not leave the child unattended at any time!</strong> Sit beside the child while they are completing the computer tasks to ensure that they are focused and still following the correct instructions.</p></li>
+<li><p>Children tire easily of these tasks because they are repetitive. Always try and <strong>encourage them to complete the task</strong>. They may take breaks in between the blocks to rest.</p></li>
+<li><p>When the child has completed the entire task, <strong>examine the test scores</strong> summary sheet once again to ensure that the child has completed the task correctly and that there were no computer errors.</p></li>
+</ol>
+<p><strong>Setting Up the Task</strong>&nbsp;</p>
+<p><strong>Materials:</strong> &nbsp;</p>
+<ul>
+<li><p><strong>Laptop</strong> with PsychExp setup (see Technical Manual)</p></li>
+<li><p><strong>Laptop Charger</strong></p></li>
+<li><p><strong>Quiet Room</strong></p></li>
+</ul>
+<ol type="1">
+<li><p>Check the <strong>date</strong> and the <strong>time</strong> on the laptop to ensure it is accurate.</p></li>
+<li><p>Apply the following settings to turn off the background processes that will interfere with the task:&nbsp;</p></li>
+</ol>
+<ul>
+<li><p>Turn on Airplane Mode</p></li>
+<li><p>Turn off Virus &amp; Threat Protection functions&nbsp;&nbsp;</p></li>
+</ul>
+<p>This process must be completed <strong>every time</strong> the task is administered&nbsp;</p>
+<ol start="3" type="1">
+<li><p>Plug in charger</p></li>
+<li><p>Double click <strong>PsychExp</strong> (from inside the Task Folder or from the shortcut on your Desktop).</p></li>
+<li><p>Click N-Back and then <strong>Run</strong>.&nbsp;</p></li>
+<li><p>Select <strong>1-back spatial</strong> or <strong>2-back spatial</strong> from the menu then click <strong>Go</strong>.</p></li>
+<li><p>Enter the <strong>Participant ID</strong> (at the bottom of the screen), then click <strong>Go</strong>.</p></li>
+<li><p>Click <strong>Run</strong>.&nbsp;</p></li>
+</ol>
+<ul>
+<li><p>If a dialogue box with the message “One or more of the log or output files already exist. Continue anyway?” appears, click <strong>Yes</strong>.</p></li>
+<li><p>If a dialogue box with the message “nback has already been run with subject ID XXX. Do you wish to continue?” appears, <strong>this indicates the data for the ID will be overwritten</strong>, ensure this is acceptable if clicking <strong>yes</strong> otherwise click <strong>no</strong> and enter a different ID&nbsp;</p></li>
+</ul>
+<p><strong>Important Controls:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Button</strong>&nbsp;</td>
+<td><strong>Actions</strong>&nbsp;</td>
+<td><strong>When to Use</strong>&nbsp;</td>
+</tr>
+<tr class="even">
+<td><strong>Enter</strong>&nbsp;</td>
+<td>Target Stimuli&nbsp;</td>
+<td>When a square appears in the same spot two times in a row.&nbsp;</td>
+</tr>
+<tr class="odd">
+<td><strong>Space</strong>&nbsp;</td>
+<td>Non-Target Stimuli&nbsp;</td>
+<td>When a square appears in a new spot.&nbsp;</td>
+</tr>
+<tr class="even">
+<td><strong>P</strong>&nbsp;</td>
+<td>Pauses the task&nbsp;</td>
+<td>When a participant needs a break during a block or if they put down the controller, etc.&nbsp;&nbsp;</td>
+</tr>
+<tr class="odd">
+<td><strong>R</strong>&nbsp;</td>
+<td>Resumes the task&nbsp;</td>
+<td>When you have manually paused the task and the participant is ready to continue&nbsp;</td>
+</tr>
+<tr class="even">
+<td><strong>Esc</strong>&nbsp;</td>
+<td>Exits the task&nbsp;</td>
+<td>When a participant refuses to finish the task after you have tried to encourage them.&nbsp;&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Administering the Task to a Participant</strong>&nbsp;</p>
+<p><strong>1-Back Spatial</strong>&nbsp;</p>
+<ul>
+<li><p>Provide the following instructions <strong>verbally (verbatim)</strong>:</p></li>
+<li><p>Big white boxes will appear on the screen in different spots on the screen</p></li>
+<li><p>Press the <strong>spacebar</strong> (point to key) whenever the big white box appears in a new spot.</p></li>
+<li><p>Press <strong>enter</strong> (point to key) if a big white box appears in the same spot as <strong>one time ago</strong>.</p></li>
+<li><p>(Draw spatial sequence as you are saying) So, if the box appears here (make a mark at location 12), press space bar; then here (mark location 4), press space bar, then again here (mark again at location 4), press <strong>enter.</strong></p></li>
+<li><p><strong>Do you understand?</strong></p></li>
+<li><p>You will also see a small white box in the middle of the screen. You can just ignore that small box. It is only there to help focus your attention.</p></li>
+<li><p><strong>Go as fast as you can and try not to make any mistakes.</strong></p></li>
+<li><p>Click <strong>Run Scenario</strong>.</p></li>
+<li><p>When the task finishes, it will end automatically.</p></li>
+<li><p>In the dialogue box, press <strong>Continue</strong>, then <strong>Finish</strong>. At this point you can close out of Presentation.</p></li>
+</ul>
+<p><strong>**Children may easily tire of the task, and require close monitoring and encouragement when breaks in the task allow for it.</strong> &nbsp;</p>
+<p><strong>Administering the Task to a Participant</strong>&nbsp;</p>
+<p><strong>2-Back Spatial</strong>&nbsp;</p>
+<ul>
+<li><p>Provide the following instructions <strong>verbally (verbatim)</strong>:</p></li>
+<li><p>Big white boxes will appear on the screen in different spots on the screen</p></li>
+<li><p>Press the <strong>spacebar</strong> (point to key) whenever the big white box appears in a new spot.</p></li>
+<li><p>Press <strong>enter</strong> (point to key) if a big white box appears in the same spot as <strong>two times ago</strong></p></li>
+<li><p>(Draw spatial sequence as you are saying) So, if the box appears here (make a mark at location 12), press space bar; then here (mark location 4), press space bar, then again here (mark again at location 12), press <strong>enter.</strong></p></li>
+<li><p><strong>Do you understand?</strong></p></li>
+<li><p>You will also see a small white box in the middle of the screen. You can just ignore that small box. It is only there to help focus your attention.</p></li>
+<li><p><strong>Go as fast as you can and try not to make any mistakes.</strong></p></li>
+<li><p>Click <strong>Run Scenario</strong>.</p></li>
+<li><p>When the task finishes, it will end automatically.</p></li>
+<li><p>In the dialogue box, press <strong>Continue</strong>, then <strong>Finish</strong>. At this point you can close out of Presentation. &nbsp;</p></li>
+</ul>
+<p><strong>**Children may easily tire of the task, and require close monitoring and encouragement when breaks in the task allow for it.</strong></p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Copyright Dr. Russell Schachar, 2002-2013 <br> Version date: March 2026 <br> Not to be distributed outside approved research team members
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
