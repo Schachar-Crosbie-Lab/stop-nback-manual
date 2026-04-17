@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "Stop & NBack Guide"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Getting Started
+      - technical-manual.qmd
+      - stop-admin.qmd
+      - nback-admin.qmd
+      - data-transfer.qmd
+      - contact.qmd
+  page-footer:
+    right: 
+      - "Copyright Dr. Russell Schachar, 2002-2013 <br> Version date: March 2026 <br> Not to be distributed outside approved research team members"
+number-sections: true
+number-depth: 3
+
+format:
+  pdf: 
+    toc: true
+  html:
+    theme:
+      - cosmo
+      - brand
+    toc: true
+
+editor: visual
+

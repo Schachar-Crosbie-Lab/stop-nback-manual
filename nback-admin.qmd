@@ -1,0 +1,151 @@
+---
+title: "N-Back Task Administration"
+---
+
+**N-Back Computer Task**  
+
+**Administration Manual** 
+
+Complete installation steps outlined in **Technical and Interpretive Manual** prior to administration 
+
+**Page 2: The N-Back Task**  
+
+**Page 3: General Instructions for Administering Computer Tasks** 
+
+**Page 4: Prepping the Program** 
+
+**Page 5: Administering the Task to a Participant 1-Back** 
+
+**Page 7: Administering the Task to a Participant 2-Back** 
+
+**Preamble** 
+
+We suggest running yourself and other staff on the task a number of times. We are happy to look at the data if you send us the files. We extend this offer in an effort to ensure that the task properly operates and scores data. Please send files to **Crosbie Lab ([crosbielab.admin\@sickkids.ca](mailto:crosbielab.admin@sickkids.ca))** 
+
+**The N-Back Task** 
+
+**Administration time:** approximately 8 minutes (2 minutes per block). 
+
+ALWAYS position yourself so that you can see the participant’s actions to ensure they are following the directions by pressing the correct buttons. 
+
+The task will run for **3 blocks experimental blocks and 1 practice block, with 40 trials per block**. The task will pause after each block and a message will appear. Press enter on the keyboard to continue.  
+
+Note: To launch the N-Back Task from the Desktop, instead of having to enter the SchacharLabTaskFolder_v6.3.1Folder each time you run a participant, create a PsychExp shortcut on the Desktop from the Task Folder (steps available in Technical Manual). 
+
+**General Instructions for Administering Computer Tasks** 
+
+1.  Explain the instructions for each task, **verbatim**, to the child as described in this manual.
+
+2.  During the **practice block**, watch and see if the child is executing the task correctly. If the child is making errors during the practice, **point out the error promptly and instruct the child again**. A second practice is required if the child is having difficulty.
+
+3.  Once the child begins the test blocks, the most appropriate time to **recap the instructions is when the task pauses after each block**. Continue to recap the instructions after every block as needed.
+
+4.  **Do not leave the child unattended at any time!** Sit beside the child while they are completing the computer tasks to ensure that they are focused and still following the correct instructions.
+
+5.  Children tire easily of these tasks because they are repetitive. Always try and **encourage them to complete the task**. They may take breaks in between the blocks to rest.
+
+6.  When the child has completed the entire task, **examine the test scores** summary sheet once again to ensure that the child has completed the task correctly and that there were no computer errors.
+
+**Setting Up the Task** 
+
+**Materials:**  
+
+-   **Laptop** with PsychExp setup (see Technical Manual)
+
+-   **Laptop Charger**
+
+-   **Quiet Room**
+
+1.  Check the **date** and the **time** on the laptop to ensure it is accurate.
+
+2.  Apply the following settings to turn off the background processes that will interfere with the task: 
+
+-   Turn on Airplane Mode
+
+-   Turn off Virus & Threat Protection functions  
+
+This process must be completed **every time** the task is administered 
+
+3.  Plug in charger
+
+4.  Double click **PsychExp** (from inside the Task Folder or from the shortcut on your Desktop).
+
+5.  Click N-Back and then **Run**. 
+
+6.  Select **1-back spatial** or **2-back spatial** from the menu then click **Go**.
+
+7.  Enter the **Participant ID** (at the bottom of the screen), then click **Go**.
+
+8.  Click **Run**. 
+
+-   If a dialogue box with the message “One or more of the log or output files already exist. Continue anyway?” appears, click **Yes**.
+
+-   If a dialogue box with the message “nback has already been run with subject ID XXX. Do you wish to continue?” appears, **this indicates the data for the ID will be overwritten**, ensure this is acceptable if clicking **yes** otherwise click **no** and enter a different ID 
+
+**Important Controls:** 
+
+|  |  |  |
+|------------------------|------------------------|------------------------|
+| **Button**  | **Actions**  | **When to Use**  |
+| **Enter**  | Target Stimuli  | When a square appears in the same spot two times in a row.  |
+| **Space**  | Non-Target Stimuli  | When a square appears in a new spot.  |
+| **P**  | Pauses the task  | When a participant needs a break during a block or if they put down the controller, etc.   |
+| **R**  | Resumes the task  | When you have manually paused the task and the participant is ready to continue  |
+| **Esc**  | Exits the task  | When a participant refuses to finish the task after you have tried to encourage them.   |
+
+**Administering the Task to a Participant** 
+
+**1-Back Spatial** 
+
+-   Provide the following instructions **verbally (verbatim)**:
+
+-   Big white boxes will appear on the screen in different spots on the screen
+
+-   Press the **spacebar** (point to key) whenever the big white box appears in a new spot.
+
+-   Press **enter** (point to key) if a big white box appears in the same spot as **one time ago**.
+
+-   (Draw spatial sequence as you are saying) So, if the box appears here (make a mark at location 12), press space bar; then here (mark location 4), press space bar, then again here (mark again at location 4), press **enter.**
+
+-   **Do you understand?**
+
+-   You will also see a small white box in the middle of the screen. You can just ignore that small box. It is only there to help focus your attention.
+
+-   **Go as fast as you can and try not to make any mistakes.**
+
+-   Click **Run Scenario**.
+
+-   When the task finishes, it will end automatically.
+
+-   In the dialogue box, press **Continue**, then **Finish**. At this point you can close out of Presentation.
+
+**\*\*Children may easily tire of the task, and require close monitoring and encouragement when breaks in the task allow for it.**  
+
+**Administering the Task to a Participant** 
+
+**2-Back Spatial** 
+
+-   Provide the following instructions **verbally (verbatim)**:
+
+-   Big white boxes will appear on the screen in different spots on the screen
+
+-   Press the **spacebar** (point to key) whenever the big white box appears in a new spot.
+
+-   Press **enter** (point to key) if a big white box appears in the same spot as **two times ago**
+
+-   (Draw spatial sequence as you are saying) So, if the box appears here (make a mark at location 12), press space bar; then here (mark location 4), press space bar, then again here (mark again at location 12), press **enter.**
+
+-   **Do you understand?**
+
+-   You will also see a small white box in the middle of the screen. You can just ignore that small box. It is only there to help focus your attention.
+
+-   **Go as fast as you can and try not to make any mistakes.**
+
+-   Click **Run Scenario**.
+
+-   When the task finishes, it will end automatically.
+
+-   In the dialogue box, press **Continue**, then **Finish**. At this point you can close out of Presentation.
+     
+
+**\*\*Children may easily tire of the task, and require close monitoring and encouragement when breaks in the task allow for it.** 
