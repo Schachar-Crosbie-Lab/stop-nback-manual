@@ -2,4 +2,6 @@
 title: "Getting Started"
 ---
 
-IDK? I can add zipped folder here maybe?
+The following manual will guide users on how to install and activate the Stop and N-Back Tasks in the [Technical Manual](technical-manual.qmd). Then will orient users to the task data outputs in the [Interpretation Guide](interpretation.qmd). Please see the [Stop Task Administration Guide](stop-admin.qmd) and [N-Back Task Administration Guide](nback-admin.qmd) for detailed instructions on administering each task and print out the respective one page cheat sheets to support your day-to-day data collection. After data collection please follow the steps for [Data Transfer](data-transfer.qmd) on a quart. We extend this offer in an effort to ensure that the task properly operates and scores data.
+
+After reading through the manual and installing the tasks on your research measures laptop, we suggest running yourself on the task 3-5 times. We are happy to look at the data outputs to confirm task is running correctly, please send files to [pondsk.data\@sickkids.ca](mailto:pondsk.data@sickkids.ca?subject=DATA%20TEST%20%5BSITE%20NAME%5D) with the subject line Data Test \[SITE NAME\]. Once data collection following the steps outlined in [Data Transfer](data-transfer.qmd). We extend this offer in an effort to ensure that the task properly operates and scores data.

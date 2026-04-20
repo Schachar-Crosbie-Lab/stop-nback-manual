@@ -1,5 +1,5 @@
 ---
-title: "interpretation"
+title: "Interpretation"
 ---
 
 # Simple Stop & N-Back Task Interpretation Guide
@@ -72,7 +72,7 @@ What we are trying to calculate is what is known as stop signal reaction time or
 
 What one does is find the mean delay between onset of go signal (which starts 500 ms after the fixation starts, i.e.: fixation lasts for 500 ms and then the go signal comes on) and the onset of the stop signal. Then you subtract the mean delay from the mean go reaction time on trials in which no stop signal was presented and the subject responded correctly (mean go rt). The stop signal can appear at any time after the onset of the go signal. In fact, it can precede it as well. (That would be the case for subjects with terrible stopping ability. It is akin to me telling you today that you will have to stop doing something tomorrow!). The delay depends on participant performance. If the participant is able to stop their response, the delay is increased by 50 ms. If the participant fails to stop, the delay is shortened. This tracking proceeds to find the point at which the participant can stop, on average, 50% of the time (known as mean P(I) or probability of inhibition).
 
-Notes:
+**Notes:**
 
 -   practice trials are not included in any calculations
 
@@ -96,7 +96,7 @@ Estimation of stop signal reaction time in the stop task assumes that a race bet
 
 Estimates of SSRT are most accurate when the probability of inhibition is .5 or thereabouts. Guido Band (Leiden University) simulated the shape of inhibition curves at different probabilities of inhibition and found them to be robust to divergence from .5. However, beyond 12.5% and 87.5% inhibition they become less valid. It is still possible to use interpolation to estimate SSRT even with such large diverge, but it may not be wise.
 
-## Understanding and Scoring the N-Back Task Output Files 
+## Understanding and Scoring the N-Back Task Output Files
 
 The Spatial N-Back Task is a working-memory task in which participants monitor the spatial location of a stimulus and respond when the current stimulus matches the location presented n trials earlier. Output statistics are calculated separately for each task condition (e.g., 1-Back Spatial and 2-Back Spatial). Practice trials are not included in any calculations.
 
@@ -107,4 +107,3 @@ The Spatial N-Back Task is a working-memory task in which participants monitor t
 #### Sample Output
 
 ![](img/out04.png){fig-align="center"}
-

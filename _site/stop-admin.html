@@ -104,12 +104,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">N-Back Task Administration</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./interpretation.html"> 
+<span class="menu-text">Interpretation</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./data-transfer.html"> 
 <span class="menu-text">Data Transfer</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
-<span class="menu-text">Crosbie Lab</span></a>
+<span class="menu-text">Contact Us!</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -127,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#simple-stop-task-summary" id="toc-simple-stop-task-summary" class="nav-link active" data-scroll-target="#simple-stop-task-summary"><span class="header-section-number">1</span> <strong>Simple Stop Task Summary</strong></a></li>
+  <li><a href="#simple-stop-task" id="toc-simple-stop-task" class="nav-link active" data-scroll-target="#simple-stop-task"><span class="header-section-number">1</span> <strong>Simple Stop Task</strong></a></li>
   <li><a href="#general-instructions" id="toc-general-instructions" class="nav-link" data-scroll-target="#general-instructions"><span class="header-section-number">2</span> <strong>General Instructions</strong></a></li>
   <li><a href="#setting-up-the-task" id="toc-setting-up-the-task" class="nav-link" data-scroll-target="#setting-up-the-task"><span class="header-section-number">3</span> <strong>Setting Up the Task</strong></a></li>
   <li><a href="#administer-the-task-to-a-participant" id="toc-administer-the-task-to-a-participant" class="nav-link" data-scroll-target="#administer-the-task-to-a-participant"><span class="header-section-number">4</span> <strong>Administer the Task to a Participant</strong></a>
@@ -137,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#printable-stop-task-cheat-sheet" id="toc-printable-stop-task-cheat-sheet" class="nav-link" data-scroll-target="#printable-stop-task-cheat-sheet"><span class="header-section-number">5</span> Printable Stop Task Cheat Sheet</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="stop-admin.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -162,12 +166,34 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Ensure installation steps outlined in <a href="./technical-manual.html">Technical and Interpretive Manual</a> are completed prior to administration</p>
-<section id="simple-stop-task-summary" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="simple-stop-task-summary"><span class="header-section-number">1</span> <strong>Simple Stop Task Summary</strong></h2>
+<section id="simple-stop-task" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="simple-stop-task"><span class="header-section-number">1</span> <strong>Simple Stop Task</strong></h2>
 <p><strong>Administration time:</strong> approximately 10 minutes (2 minutes per block).</p>
 <p>What we are trying to calculate is what is known as Stop Signal Reaction Time (SSRT) which reflects the latency of the stopping process. SSRT cannot be measured directly because there is no overt response that latency of which can be measured when you stop doing something.</p>
 <p>The task will run for <strong>4 experimental blocks and 1 practice block, with 24 trials per block</strong>. The task will pause after each block and a message will appear. If the screen is black the participant can press X or O to continue on to the next block. If the screen is white you need to provide corrective feedback to them (see instructions below) and then press 8 on the keyboard to allow them to continue.</p>
-<p>Note: To launch the Stop Task from the Desktop, instead of having to enter the SchacharLabTaskFolder_v6.3.1Folder each time you run a participant, create a PsychExp shortcut on the Desktop from the Task Folder (steps available in Technical Manual).</p>
+<div id="tip-shorcut" class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip&nbsp;1: Make a PsychExp Shortcut
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To launch the Stop Task from the Desktop, instead of having to enter the SchacharLabTaskFolder_v6.3.1 Folder each time you run a participant, create a PsychExp shortcut on the Desktop from the Task Folder (steps available in <a href="./technical-manual.html">Technical Manual</a>)</p>
+</div>
+</div>
+<div id="fig-pe" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/run06.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+&nbsp;1: PsychExp Icon
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="general-instructions" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="general-instructions"><span class="header-section-number">2</span> <strong>General Instructions</strong></h2>
@@ -197,15 +223,38 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Turn off Virus &amp; Threat Protection functions</p></li>
 </ul></li>
 </ol>
-<p>This process must be completed <strong>every time</strong> the task is administered&nbsp;</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/run01.png" class="img-fluid figure-img"></p>
+<figcaption>Airplane mode</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/run04.png" class="img-fluid figure-img"></p>
+<figcaption>Turn off all functions</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>This process must be completed <strong>every time</strong> the task is administered</p>
 <ol start="3" type="1">
-<li><p>Plug in charger regardless of battery level and game controller</p></li>
-<li><p>Double click <strong>PsychExp</strong></p></li>
-<li><p>Click Simple Stop and then <strong>Run</strong>.</p></li>
-<li><p>Enter the <strong>Participant ID</strong> (at the bottom of the screen), then click <strong>Go</strong>.</p></li>
-<li><p>Click <strong>Run</strong>.</p>
+<li><p>Plug in charger regardless of battery level and plug in the game controller</p></li>
+<li><p>Double click <a href="#fig-pe" class="quarto-xref"><strong>PsychExp</strong>&nbsp;1</a></p></li>
+<li><p>Click Simple Stop and then <strong>Run</strong></p></li>
+<li><p>Enter the <strong>Participant ID</strong> (at the bottom of the screen), then click <strong>Go</strong></p></li>
+<li><p>Click <strong>Run</strong></p>
 <ul>
-<li><p>If a dialogue box with the message <em>“One or more of the log or output files already exist. Continue anyway?”</em> appears, click <strong>Yes</strong>.</p></li>
+<li><p>If a dialogue box with the message <em>“One or more of the log or output files already exist. Continue anyway?”</em> appears, click <strong>Yes</strong></p></li>
 <li><p>If a dialogue box with the message <em>“stopsignal has already been run with subject ID XXX. Do you wish to continue?”</em> appears, this indicates the data for the ID will be <strong>overwritten</strong>, ensure this is acceptable if clicking <strong>yes</strong> otherwise click <strong>no</strong> and enter a different ID</p></li>
 </ul></li>
 </ol>

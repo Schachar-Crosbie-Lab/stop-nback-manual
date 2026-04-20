@@ -82,10 +82,10 @@ This process must be completed **every time** the task is administered 
 
 -   If a dialogue box with the message “nback has already been run with subject ID XXX. Do you wish to continue?” appears, **this indicates the data for the ID will be overwritten**, ensure this is acceptable if clicking **yes** otherwise click **no** and enter a different ID 
 
-**Important Controls:** 
+**Important Controls:**
 
 |  |  |  |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | **Button**  | **Actions**  | **When to Use**  |
 | **Enter**  | Target Stimuli  | When a square appears in the same spot two times in a row.  |
 | **Space**  | Non-Target Stimuli  | When a square appears in a new spot.  |
@@ -145,7 +145,6 @@ This process must be completed **every time** the task is administered 
 
 -   When the task finishes, it will end automatically.
 
--   In the dialogue box, press **Continue**, then **Finish**. At this point you can close out of Presentation.
-     
+-   In the dialogue box, press **Continue**, then **Finish**. At this point you can close out of Presentation.  
 
-**\*\*Children may easily tire of the task, and require close monitoring and encouragement when breaks in the task allow for it.** 
+**\*\*Children may easily tire of the task, and require close monitoring and encouragement when breaks in the task allow for it.**

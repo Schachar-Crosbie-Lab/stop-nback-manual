@@ -4,14 +4,6 @@ title: "Technical Manual"
 
 # Simple Stop & N-Back Task Technical Guide
 
-**Preamble**
-
-The following manual will first guide users on how to install, activate the Stop and N-Back Tasks. Then will orient users to the task data outputs. Please see the [Stop Task Administration Guide](stop-admin.qmd) and [N-Back Task Administration Guide](nback-admin.qmd) for detailed instructions on administering each task.
-
-After reading through the manual and installing the tasks on your research measures laptop, we suggest running yourself on the task 3-5 times. We are happy to look at the data outputs if you send us the files following the steps outlined in [Data Transfer](data-transfer.qmd). We extend this offer in an effort to ensure that the task properly operates and scores data.
-
-Please send files to **Crosbie Lab Data (crosbielab.admin\@sickkids.ca).**
-
 ## Install Presentation
 
 Presentation is a stimulus delivery and experiment control program to be used to run neuroscientific tasks created by NeuroBehavioural Systems (NBS).
@@ -119,11 +111,9 @@ The .exp files contain configuration settings that are specific to the computer 
 We use the **Logitech Precision Gamepad 2** but other Stop Task users have reported the **Precision Gamepad 2** is becoming increasingly difficult to find. Essentially, you want a basic, brand name, wired controller. A suitable alternative is the **Logitech Gamepad F310.**
 
 ::: {layout-ncol="2"}
-
 ![Logitech Precision Gamepad 2](img/st02.jpg){width="250"}
 
 ![Logitech Gamepad F310](img/st03.jpg)
-
 :::
 
 **Program Response Buttons on the Game Controller**

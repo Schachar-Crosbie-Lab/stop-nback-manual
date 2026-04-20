@@ -10,6 +10,7 @@ website:
       - technical-manual.qmd
       - stop-admin.qmd
       - nback-admin.qmd
+      - interpretation.qmd
       - data-transfer.qmd
       - contact.qmd
   page-footer:
@@ -17,6 +18,10 @@ website:
       - "Copyright Dr. Russell Schachar, 2002-2013 <br> Version date: March 2026 <br> Not to be distributed outside approved research team members"
 number-sections: true
 number-depth: 3
+
+crossref:
+  fig-title: ""
+  fig-prefix: ""
 
 format:
   pdf: 

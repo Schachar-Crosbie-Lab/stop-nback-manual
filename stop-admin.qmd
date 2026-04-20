@@ -4,7 +4,7 @@ title: "Stop Task Administration"
 
 Ensure installation steps outlined in [Technical and Interpretive Manual](technical-manual.qmd) are completed prior to administration
 
-## **Simple Stop Task Summary**
+## **Simple Stop Task**
 
 **Administration time:** approximately 10 minutes (2 minutes per block).
 
@@ -12,7 +12,13 @@ What we are trying to calculate is what is known as Stop Signal Reaction Time (S
 
 The task will run for **4 experimental blocks and 1 practice block, with 24 trials per block**. The task will pause after each block and a message will appear. If the screen is black the participant can press X or O to continue on to the next block. If the screen is white you need to provide corrective feedback to them (see instructions below) and then press 8 on the keyboard to allow them to continue.
 
-Note: To launch the Stop Task from the Desktop, instead of having to enter the SchacharLabTaskFolder_v6.3.1Folder each time you run a participant, create a PsychExp shortcut on the Desktop from the Task Folder (steps available in Technical Manual).
+::: {#tip-shorcut .callout-tip}
+## Make a PsychExp Shortcut
+
+To launch the Stop Task from the Desktop, instead of having to enter the SchacharLabTaskFolder_v6.3.1 Folder each time you run a participant, create a PsychExp shortcut on the Desktop from the Task Folder (steps available in [Technical Manual](technical-manual.qmd))
+:::
+
+![PsychExp Icon](img/run06.png){#fig-pe}
 
 ## **General Instructions**
 
@@ -44,27 +50,34 @@ Note: To launch the Stop Task from the Desktop, instead of having to enter the S
     -   Turn on Airplane Mode
 
     -   Turn off Virus & Threat Protection functions
+    
+  
+::: {layout-ncol="2"}
+![Airplane mode](img/run01.png)
 
-This process must be completed **every time** the task is administered 
+![Turn off all functions](img/run04.png)
+:::
 
-3.  Plug in charger regardless of battery level and game controller
+This process must be completed **every time** the task is administered
 
-4.  Double click **PsychExp**
+3.  Plug in charger regardless of battery level and plug in the game controller
 
-5.  Click Simple Stop and then **Run**.
+4.  Double click [**PsychExp** @fig-pe]
 
-6.  Enter the **Participant ID** (at the bottom of the screen), then click **Go**.
+5.  Click Simple Stop and then **Run**
 
-7.  Click **Run**.
+6.  Enter the **Participant ID** (at the bottom of the screen), then click **Go**
 
-    -   If a dialogue box with the message *“One or more of the log or output files already exist. Continue anyway?”* appears, click **Yes**.
+7.  Click **Run**
+
+    -   If a dialogue box with the message *“One or more of the log or output files already exist. Continue anyway?”* appears, click **Yes**
 
     -   If a dialogue box with the message *“stopsignal has already been run with subject ID XXX. Do you wish to continue?”* appears, this indicates the data for the ID will be **overwritten**, ensure this is acceptable if clicking **yes** otherwise click **no** and enter a different ID
 
 **Important Controls:**
 
 |  |  |  |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **Button**  | **Actions**  | **When to Use**  |
 | **X** | Correct response | When a participant sees an X (and doesn’t hear a beep) |
 | **O** | Correct response | When a participant sees an O (and doesn’t hear a beep) |
@@ -138,7 +151,7 @@ White screens with text appear between blocks when the game determines the parti
 The messages that you will see are:
 
 |  |  |  |  |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | **White Screen Trigger** | **Text on White Screen** | **What Participant is likely doing Wrong** | **Feedback to be provided to Participant** |
 | There are **0 go trials with responses, or 0 stop trials** | **No responses were detected**. | Participant **did not press** the X nor the O button or they may be pressing the **wrong buttons** on the controller. | Review buttons with participant and remind participant to press X or O buttons when prompted. |
 | If the **percent of correct responses** on go trials \<= 50% | **You may be pressing the wrong button.** | Participant likely **mixing up** the X and O buttons or pressing the wrong buttons. | Review buttons with participant. |
