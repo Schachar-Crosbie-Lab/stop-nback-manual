@@ -104,12 +104,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">N-Back Task Administration</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./interpretation.html"> 
+<span class="menu-text">Interpretation</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./data-transfer.html" aria-current="page"> 
 <span class="menu-text">Data Transfer</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
-<span class="menu-text">Crosbie Lab</span></a>
+<span class="menu-text">Contact Us!</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -360,7 +364,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/Schachar-Crosbie-Lab\.github\.io\/stop-nback-manual\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
