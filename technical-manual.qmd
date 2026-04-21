@@ -20,7 +20,7 @@ After purchasing and downloading the software:
 
 1.  Open a Presentation window on the desktop. Click on **Activate**
 
-2.  Highlight and copy (ctrl+C) the code in Line 3 - *Do not close this window*
+2.  Highlight and copy (ctrl+c) the code in Line 3 - *Do not close this window*
 
 3.  Go to [www.neurobs.com](http://www.neurobs.com/)
 
@@ -54,11 +54,11 @@ This software comes with absolutely no warranty. Your feedback on these installa
     -   If using a device that syncs with OneDrive or SharePoint ensure that the SchacharLabTaskFolder is excluded from syncing as those processes can remove local files to free up space without warning
     -   Do not add or remove files from inside the SchacharLabTaskFolder except for data transfers
 5.  Create a shortcut of PsychExp to run the tasks from your desktop without needing to open the folder each time:
-    -   Right-click the PsychExp Icon -\> Show More Options -\> Create a Shortcut
+    -   Right-click the [**PsychExp Icon**]{.fig-hover data-fig="fig-pe"} > Show More Options > Create a Shortcut
     -   This shortcut can be moved to any location (such as the Desktop) and will run the task regardless of where the folder is located
 
 ::: {layout-ncol="2"}
-![Zipped Folder Icon](img/gen02.png)
+![Zipped Folder Icon](img/gen02.png){#fig-zip}
 
 ![Unzipped Folder Icon](img/gen01.png)
 :::
@@ -67,9 +67,9 @@ This software comes with absolutely no warranty. Your feedback on these installa
 
 Two files within the SchacharLabTaskFolder_v6.3.1 need to be verified by you to ensure the task will run correctly:
 
--   stopsignal.exp
+-   [stopsignal.exp]{.fig-hover data-fig="fig-stexp"}
 
--   nback.exp
+-   [nback.exp]{.fig-hover data-fig="fig-nbexp"}
 
 The .exp files contain configuration settings that are specific to the computer you are using. It keeps track of settings you change in Presentation, such as: where to find image files, what response device you are using, where to write output files, etc.
 

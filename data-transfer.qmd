@@ -28,7 +28,7 @@ We recommend backing up your data output files frequently to ensure no data is l
 
 ## Transfer Data
 
-### **PROCESS DATA**
+### Process
 
 1.  Open **PsychExp** from the SchacharLabTaskFolder_v6.3.1 Folder or the shortcut from your Desktop.
 
@@ -44,7 +44,7 @@ We recommend backing up your data output files frequently to ensure no data is l
 
 4.  To access the task output data files (the .dat, .raw, .dbg, and .log files), open the **SchacharLabTaskFolder_v6.3.1 Folder** and then open the task subfolder SimpleStop or NBack
 
-### **CLEAN DATA**
+### Clean
 
 1.  Open the .csv that is named after the folder (e.g., SimpleStop.csv and NBack.csv). This file will list all the IDs that were processed. Check the IDs for **practice records, non-POND records, misnamed records, or repeated administration records**.
 
@@ -60,7 +60,7 @@ We recommend backing up your data output files frequently to ensure no data is l
 
 6.  Email [**crosbielab.admin\@sickkids.ca**](mailto:crosbielab.admin@sickkids.ca)if you would like to receive a list of previously sent POND IDs to confirm which files to exclude
 
-### **SEND DATA**
+### Send
 
 1.  Create a New Folder named **yourpondsitename_MMYYYY_taskname** (e.g. sickkids_032026_simplestop) inside your task’s data folder (i.e., SimpleStop or NBack)
 

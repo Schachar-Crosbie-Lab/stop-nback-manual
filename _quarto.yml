@@ -16,21 +16,24 @@ website:
   page-footer:
     right: 
       - "Copyright Dr. Russell Schachar, 2002-2013 <br> Version date: March 2026 <br> Not to be distributed outside approved research team members"
-number-sections: true
+
+number-sections: false
 number-depth: 3
 
 crossref:
   fig-title: ""
   fig-prefix: ""
 
+crossrefs-hover: true
+
+toc: true
+
 format:
-  pdf: 
-    toc: true
   html:
-    theme:
-      - cosmo
-      - brand
-    toc: true
+    css: styles.css
+    include-in-header:
+      text: |
+        <script src="hover-figures.js"></script>
 
 editor: visual
 
