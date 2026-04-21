@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d4be639c637f3db3c684c66cefad7e0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,8 +66,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="hover-figures.js"></script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -131,18 +133,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#simple-stop-n-back-task-interpretation-guide" id="toc-simple-stop-n-back-task-interpretation-guide" class="nav-link active" data-scroll-target="#simple-stop-n-back-task-interpretation-guide"><span class="header-section-number">1</span> Simple Stop &amp; N-Back Task Interpretation Guide</a>
+  <li><a href="#simple-stop-n-back-task-interpretation-guide" id="toc-simple-stop-n-back-task-interpretation-guide" class="nav-link active" data-scroll-target="#simple-stop-n-back-task-interpretation-guide">Simple Stop &amp; N-Back Task Interpretation Guide</a>
   <ul class="collapse">
-  <li><a href="#task-output-data-folders" id="toc-task-output-data-folders" class="nav-link" data-scroll-target="#task-output-data-folders"><span class="header-section-number">1.1</span> Task Output Data Folders</a></li>
-  <li><a href="#understanding-the-stop-task-output-files" id="toc-understanding-the-stop-task-output-files" class="nav-link" data-scroll-target="#understanding-the-stop-task-output-files"><span class="header-section-number">1.2</span> Understanding the Stop Task Output Files</a>
+  <li><a href="#task-output-data-folders" id="toc-task-output-data-folders" class="nav-link" data-scroll-target="#task-output-data-folders">Task Output Data Folders</a></li>
+  <li><a href="#understanding-the-stop-task-output-files" id="toc-understanding-the-stop-task-output-files" class="nav-link" data-scroll-target="#understanding-the-stop-task-output-files">Understanding the Stop Task Output Files</a>
   <ul class="collapse">
-  <li><a href="#ssrt-stop-signal-reaction-time" id="toc-ssrt-stop-signal-reaction-time" class="nav-link" data-scroll-target="#ssrt-stop-signal-reaction-time"><span class="header-section-number">1.2.1</span> SSRT: Stop Signal Reaction time</a></li>
-  <li><a href="#rationale-for-exclusion-criteria" id="toc-rationale-for-exclusion-criteria" class="nav-link" data-scroll-target="#rationale-for-exclusion-criteria"><span class="header-section-number">1.2.2</span> Rationale for exclusion criteria:</a></li>
+  <li><a href="#ssrt-stop-signal-reaction-time" id="toc-ssrt-stop-signal-reaction-time" class="nav-link" data-scroll-target="#ssrt-stop-signal-reaction-time">SSRT: Stop Signal Reaction time</a></li>
+  <li><a href="#rationale-for-exclusion-criteria" id="toc-rationale-for-exclusion-criteria" class="nav-link" data-scroll-target="#rationale-for-exclusion-criteria">Rationale for exclusion criteria:</a></li>
   </ul></li>
-  <li><a href="#understanding-and-scoring-the-n-back-task-output-files" id="toc-understanding-and-scoring-the-n-back-task-output-files" class="nav-link" data-scroll-target="#understanding-and-scoring-the-n-back-task-output-files"><span class="header-section-number">1.3</span> Understanding and Scoring the N-Back Task Output Files</a></li>
+  <li><a href="#understanding-and-scoring-the-n-back-task-output-files" id="toc-understanding-and-scoring-the-n-back-task-output-files" class="nav-link" data-scroll-target="#understanding-and-scoring-the-n-back-task-output-files">Understanding and Scoring the N-Back Task Output Files</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="interpretation.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -166,10 +168,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="simple-stop-n-back-task-interpretation-guide" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Simple Stop &amp; N-Back Task Interpretation Guide</h1>
-<section id="task-output-data-folders" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="task-output-data-folders"><span class="header-section-number">1.1</span> Task Output Data Folders</h2>
+<section id="simple-stop-n-back-task-interpretation-guide" class="level1">
+<h1>Simple Stop &amp; N-Back Task Interpretation Guide</h1>
+<section id="task-output-data-folders" class="level2">
+<h2 class="anchored" data-anchor-id="task-output-data-folders">Task Output Data Folders</h2>
 <p>When you run one of the tasks included in this task folder, it will save all task output data files in a sub-folder inside the <strong>SchacharLabTaskFolder_v6.3.1 Folder</strong></p>
 <ul>
 <li><p>SimpleStop</p></li>
@@ -184,8 +186,8 @@ ul.task-list li input[type="checkbox"] {
 <p>When you process a data folder, it will also create two .csv files showing all the data in that folder in a single file that you can load into a spreadsheet. The first summary file will be named after the folder it is in, e.g.: for Simple Stop it will be <strong>SimpleStop.csv</strong> and the second named <strong>Stop_trialPerLine.csv</strong>. Each time the data is processed the two .csv files will be generated with the same name and overwrite the previous one with the same name. The column headings are somewhat cryptic (in order to save space in the spreadsheet headings), but if you compare it with a score sheet they are easy to map out.</p>
 <p>We recommend backing up your data output files frequently to ensure no data is lost. Read below to understand the contents of the task outputs for your own understanding or skip ahead to <a href="./data-transfer.html">Data Transfer</a> to learn how to send output for scoring.</p>
 </section>
-<section id="understanding-the-stop-task-output-files" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="understanding-the-stop-task-output-files"><span class="header-section-number">1.2</span> Understanding the Stop Task Output Files</h2>
+<section id="understanding-the-stop-task-output-files" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-stop-task-output-files">Understanding the Stop Task Output Files</h2>
 <p>The Stop Signal Task is a response inhibition task in which participants make a speeded response to a stimulus but must withhold their response when an infrequent stop signal is presented shortly after the go stimulus. The stop‑signal delay is dynamically adjusted using a tracking algorithm to target approximately 50% successful inhibition. Practice trials are not included in any calculations.</p>
 <p><strong>Go trial:</strong> A trial in which there is no signal to inhibit response (also called a no-stop trial).</p>
 <p><strong>Stop trial:</strong> A trial in which the user is prompted by a stop signal to inhibit their response after some experimentally controlled delay between the onset of the fixate and the latest time allowed for the placement of the stop signal. Notation Sr for the failure to inhibit response (also called a failed inhibit or signal-respond trial), and Si for inhibiting their response (also called a correct stop trial or signal-inhibit trial).</p>
@@ -205,8 +207,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>G(c) after S(r) faster/slower than median (%):</strong> Find all the Gc trials that immediately follow an Sr trial. Using the median time calculated for the Correct Go Following Correct Go Median RT, report what percentage of these trials are faster and slower than the median.</p>
 <p><strong>Percentage of prepush trials:</strong> The percentage of all trials in this experiment that had any number of prepushes.</p>
 <p><strong>Split Half Reliability:</strong> These lines repeat the same calculation as above, but once for all the even trials and once for all the odd trials.</p>
-<section id="ssrt-stop-signal-reaction-time" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="ssrt-stop-signal-reaction-time"><span class="header-section-number">1.2.1</span> SSRT: Stop Signal Reaction time</h3>
+<section id="ssrt-stop-signal-reaction-time" class="level3">
+<h3 class="anchored" data-anchor-id="ssrt-stop-signal-reaction-time">SSRT: Stop Signal Reaction time</h3>
 <p>This calculation is not explicitly outlined in the scoring sheet, but is the whole point of the experiment. Dr.&nbsp;Schachar wrote this helpful definition:</p>
 <p>What we are trying to calculate is what is known as stop signal reaction time or SSRT which reflects the latency of the stopping process. SSRT cannot be measured directly because there is no overt response that latency of which can be measured when you stop doing something.</p>
 <p>What one does is find the mean delay between onset of go signal (which starts 500 ms after the fixation starts, i.e.: fixation lasts for 500 ms and then the go signal comes on) and the onset of the stop signal. Then you subtract the mean delay from the mean go reaction time on trials in which no stop signal was presented and the subject responded correctly (mean go rt). The stop signal can appear at any time after the onset of the go signal. In fact, it can precede it as well. (That would be the case for subjects with terrible stopping ability. It is akin to me telling you today that you will have to stop doing something tomorrow!). The delay depends on participant performance. If the participant is able to stop their response, the delay is increased by 50 ms. If the participant fails to stop, the delay is shortened. This tracking proceeds to find the point at which the participant can stop, on average, 50% of the time (known as mean P(I) or probability of inhibition).</p>
@@ -236,14 +238,14 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>*PSI:</strong> In general, we only exclude cases when their total scores fail the criteria.</p>
 </section>
 </section>
-<section id="rationale-for-exclusion-criteria" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="rationale-for-exclusion-criteria"><span class="header-section-number">1.2.2</span> Rationale for exclusion criteria:</h3>
+<section id="rationale-for-exclusion-criteria" class="level3">
+<h3 class="anchored" data-anchor-id="rationale-for-exclusion-criteria">Rationale for exclusion criteria:</h3>
 <p>Estimation of stop signal reaction time in the stop task assumes that a race between going and stopping processes determines the outcome of the race. If going finishes before the stop process, then the response made is much like as if no stop signal had been presented. If the stop process wins the race, then one stops and no button press is recorded. If you don’t manage to achieve 66% accuracy in going you are not likely to be pressing the go task properly and consequently there is no valid go reaction time to use in calculating SSRT. That is the reason for the 66% threshold.</p>
 <p>Estimates of SSRT are most accurate when the probability of inhibition is .5 or thereabouts. Guido Band (Leiden University) simulated the shape of inhibition curves at different probabilities of inhibition and found them to be robust to divergence from .5. However, beyond 12.5% and 87.5% inhibition they become less valid. It is still possible to use interpolation to estimate SSRT even with such large diverge, but it may not be wise.</p>
 </section>
 </section>
-<section id="understanding-and-scoring-the-n-back-task-output-files" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="understanding-and-scoring-the-n-back-task-output-files"><span class="header-section-number">1.3</span> Understanding and Scoring the N-Back Task Output Files</h2>
+<section id="understanding-and-scoring-the-n-back-task-output-files" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-and-scoring-the-n-back-task-output-files">Understanding and Scoring the N-Back Task Output Files</h2>
 <p>The Spatial N-Back Task is a working-memory task in which participants monitor the spatial location of a stimulus and respond when the current stimulus matches the location presented n trials earlier. Output statistics are calculated separately for each task condition (e.g., 1-Back Spatial and 2-Back Spatial). Practice trials are not included in any calculations.</p>
 <p><strong>Target trial:</strong> Stimulus location matches the location presented n trials earlier.</p>
 <p><strong>Non-Target trial:</strong> Stimulus location does not match the location presented n trials earlier.</p>

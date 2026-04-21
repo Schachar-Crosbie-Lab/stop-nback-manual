@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d4be639c637f3db3c684c66cefad7e0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,8 +66,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="hover-figures.js"></script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -131,15 +133,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#task-output-data-folders" id="toc-task-output-data-folders" class="nav-link active" data-scroll-target="#task-output-data-folders"><span class="header-section-number">1</span> Task Output Data Folders</a></li>
-  <li><a href="#transfer-data" id="toc-transfer-data" class="nav-link" data-scroll-target="#transfer-data"><span class="header-section-number">2</span> Transfer Data</a>
+  <li><a href="#task-output-data-folders" id="toc-task-output-data-folders" class="nav-link active" data-scroll-target="#task-output-data-folders">Task Output Data Folders</a></li>
+  <li><a href="#transfer-data" id="toc-transfer-data" class="nav-link" data-scroll-target="#transfer-data">Transfer Data</a>
   <ul class="collapse">
-  <li><a href="#process-data" id="toc-process-data" class="nav-link" data-scroll-target="#process-data"><span class="header-section-number">2.1</span> <strong>PROCESS DATA</strong></a></li>
-  <li><a href="#clean-data" id="toc-clean-data" class="nav-link" data-scroll-target="#clean-data"><span class="header-section-number">2.2</span> <strong>CLEAN DATA</strong></a></li>
-  <li><a href="#send-data" id="toc-send-data" class="nav-link" data-scroll-target="#send-data"><span class="header-section-number">2.3</span> <strong>SEND DATA</strong></a></li>
+  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process">Process</a></li>
+  <li><a href="#clean" id="toc-clean" class="nav-link" data-scroll-target="#clean">Clean</a></li>
+  <li><a href="#send" id="toc-send" class="nav-link" data-scroll-target="#send">Send</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="data-transfer.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -163,8 +165,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="task-output-data-folders" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="task-output-data-folders"><span class="header-section-number">1</span> Task Output Data Folders</h2>
+<section id="task-output-data-folders" class="level2">
+<h2 class="anchored" data-anchor-id="task-output-data-folders">Task Output Data Folders</h2>
 <p>When you run one of the tasks included in this task folder, it will save all task output data files in a sub-folder inside the <strong>SchacharLabTaskFolder_v6.3.1 Folder</strong></p>
 <ul>
 <li><p>SimpleStop</p></li>
@@ -179,10 +181,10 @@ ul.task-list li input[type="checkbox"] {
 <p>When you process a data folder, it will also create two .csv files showing all the data in that folder in a single file that you can load into a spreadsheet. The first summary file will be named after the folder it is in, e.g.: for Simple Stop it will be <strong>SimpleStop.csv</strong> and the second named <strong>Stop_trialPerLine.csv</strong>. Each time the data is processed the two .csv files will be generated with the same name and overwrite the previous one with the same name. The column headings are somewhat cryptic (in order to save space in the spreadsheet headings), but if you compare it with a score sheet they are easy to map out.</p>
 <p>We recommend backing up your data output files frequently to ensure no data is lost. To transfer data complete the following three stages: process data, clean data, and send</p>
 </section>
-<section id="transfer-data" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="transfer-data"><span class="header-section-number">2</span> Transfer Data</h2>
-<section id="process-data" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="process-data"><span class="header-section-number">2.1</span> <strong>PROCESS DATA</strong></h3>
+<section id="transfer-data" class="level2">
+<h2 class="anchored" data-anchor-id="transfer-data">Transfer Data</h2>
+<section id="process" class="level3">
+<h3 class="anchored" data-anchor-id="process">Process</h3>
 <ol type="1">
 <li>Open <strong>PsychExp</strong> from the SchacharLabTaskFolder_v6.3.1 Folder or the shortcut from your Desktop.</li>
 </ol>
@@ -207,8 +209,8 @@ ul.task-list li input[type="checkbox"] {
 <li>To access the task output data files (the .dat, .raw, .dbg, and .log files), open the <strong>SchacharLabTaskFolder_v6.3.1 Folder</strong> and then open the task subfolder SimpleStop or NBack</li>
 </ol>
 </section>
-<section id="clean-data" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="clean-data"><span class="header-section-number">2.2</span> <strong>CLEAN DATA</strong></h3>
+<section id="clean" class="level3">
+<h3 class="anchored" data-anchor-id="clean">Clean</h3>
 <ol type="1">
 <li>Open the .csv that is named after the folder (e.g., SimpleStop.csv and NBack.csv). This file will list all the IDs that were processed. Check the IDs for <strong>practice records, non-POND records, misnamed records, or repeated administration records</strong>.</li>
 </ol>
@@ -232,8 +234,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Email <a href="mailto:crosbielab.admin@sickkids.ca"><strong>crosbielab.admin@sickkids.ca</strong></a>if you would like to receive a list of previously sent POND IDs to confirm which files to exclude</p></li>
 </ol>
 </section>
-<section id="send-data" class="level3" data-number="2.3">
-<h3 data-number="2.3" class="anchored" data-anchor-id="send-data"><span class="header-section-number">2.3</span> <strong>SEND DATA</strong></h3>
+<section id="send" class="level3">
+<h3 class="anchored" data-anchor-id="send">Send</h3>
 <ol type="1">
 <li>Create a New Folder named <strong>yourpondsitename_MMYYYY_taskname</strong> (e.g.&nbsp;sickkids_032026_simplestop) inside your task’s data folder (i.e., SimpleStop or NBack)</li>
 </ol>
