@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -120,13 +120,30 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="mailto:pondsk.data@sickkids.ca" title="Contact Us" class="quarto-navigation-tool px-1" aria-label="Contact Us"><i class="bi bi-envelope"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Getting Started</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="sidebar-tools-main">
+    <a href="mailto:pondsk.data@sickkids.ca" title="Contact Us" class="quarto-navigation-tool px-1" aria-label="Contact Us"><i class="bi bi-envelope"></i></a>
+</div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -165,36 +182,9 @@ ul.task-list li input[type="checkbox"] {
 <p>N-Back Cheat Sheet</p>
 <section id="glossary" class="level2">
 <h2 class="anchored" data-anchor-id="glossary">Glossary</h2>
-<div id="fig-stexp" class="hover-source quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-stexp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/st14.png" class="hover-source img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stexp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;1: Stop Signal .exp file
-</figcaption>
-</figure>
-</div>
-<div id="fig-nbexp" class="hover-source quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-nbexp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/nb04.png" class="hover-source img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nbexp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;2: NBack .exp file
-</figcaption>
-</figure>
-</div>
-<div id="fig-pe" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-pe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/run06.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;3: PsychExp Icon
-</figcaption>
-</figure>
-</div>
+<!-- ![Stop Signal .exp file](img/st14.png){#fig-stexp .hover-source} -->
+<!-- ![NBack .exp file](img/nb04.png){#fig-nbexp .hover-source} -->
+<!-- ![PsychExp Icon](img/run06.png){#fig-pe} -->
 
 
 </section>
@@ -290,7 +280,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/Schachar-Crosbie-Lab\.github\.io\/stop-nback-manual\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

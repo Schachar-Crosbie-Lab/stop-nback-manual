@@ -36,7 +36,7 @@ To launch the task from the Desktop, instead of having to navigate to the Schach
 
 ## Setting Up the Task
 
-**Materials:** 
+**Materials:**
 
 -   **Laptop** with PsychExp setup (see [Technical Manual](technical-manual.qmd))
 -   **Laptop Charger**
@@ -76,7 +76,7 @@ This process must be completed **every time** the task is administered
 **Important Controls:**
 
 |  |  |  |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | **Button**  | **Actions**  | **When to Use**  |
 | **X** | Correct response | When a participant sees an X (and doesn’t hear a beep) |
 | **O** | Correct response | When a participant sees an O (and doesn’t hear a beep) |
@@ -89,6 +89,7 @@ This process must be completed **every time** the task is administered
 
 1.  Give participant the game controller
 
+::: {style="color: #06402B;"}
 2.  Provide the following instructions **verbally (verbatim)**:
 
     -   You will see either an X or an O appear in the middle of the screen
@@ -99,11 +100,12 @@ This process must be completed **every time** the task is administered
 
     -   Sometimes you will hear a beep. When you hear the beep, don’t press anything
 
-    -   Let’s check, when you see an X what do you press? \[participant points to X button\], when we you an O what do you press \[participant points to O button\], and when you hear a beep, what do you do \[don’t press anything\]
+    -   Let’s check, when you see an X what do you press? participant points to X button, when we you an O what do you press participant points to O button, and when you hear a beep, what do you do don’t press anything
 
     -   **Go as fast as you can, try not to make mistakes**, and **don’t wait for the beep.**
 
     -   Do you have any questions?
+:::
 
 3.  Click **Run Scenario**.
 
@@ -137,14 +139,14 @@ White screens with text appear between blocks when the game determines the parti
 
 **PSI:** percent stop inhibition. This refers to how often they are inhibiting when they hear a beep and should be in between **12.5% to 87.5%**
 
-**SSRT:** stop signal reaction time. This refers to the latency of the stopping process. 
+**SSRT:** stop signal reaction time. This refers to the latency of the stopping process.
 
 **MCRT:** mean correct reaction time. This refers to how fast they are responding when they see an X or O and should be **below 500ms**
 
 The messages that you will see are:
 
 |  |  |  |  |
-|------------------|------------------|------------------|------------------|
+|----|----|----|----|
 | **White Screen Trigger** | **Text on White Screen** | **What Participant is likely doing Wrong** | **Feedback to be provided to Participant** |
 | There are 0 trials with responses | **No responses were detected**. | Participant **did not press** the X nor the O button or they may be pressing the **wrong buttons** on the controller. | Review buttons with participant and remind participant to press X or O buttons when prompted. |
 | If the **percent of correct responses** on go trials \<= 50% | **You may be pressing the wrong button.** | Participant likely **mixing up** the X and O buttons or pressing the wrong buttons. | Review buttons with participant. |

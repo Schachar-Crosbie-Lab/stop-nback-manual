@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -120,13 +120,30 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="mailto:pondsk.data@sickkids.ca" title="Contact Us" class="quarto-navigation-tool px-1" aria-label="Contact Us"><i class="bi bi-envelope"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Stop Task Administration</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="sidebar-tools-main">
+    <a href="mailto:pondsk.data@sickkids.ca" title="Contact Us" class="quarto-navigation-tool px-1" aria-label="Contact Us"><i class="bi bi-envelope"></i></a>
+</div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -192,7 +209,7 @@ Tip&nbsp;1: Make a PsychExp Shortcut
 <img src="img/run06.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;1: PsychExp Icon
+Fig&nbsp;1: PsychExp Icon
 </figcaption>
 </figure>
 </div>
@@ -309,17 +326,23 @@ Tip&nbsp;1: Make a PsychExp Shortcut
 <section id="administer-the-task-to-a-participant" class="level2">
 <h2 class="anchored" data-anchor-id="administer-the-task-to-a-participant">Administer the Task to a Participant</h2>
 <ol type="1">
-<li><p>Give participant the game controller</p></li>
+<li>Give participant the game controller</li>
+</ol>
+<div style="color: #06402B;">
+<ol start="2" type="1">
 <li><p>Provide the following instructions <strong>verbally (verbatim)</strong>:</p>
 <ul>
 <li><p>You will see either an X or an O appear in the middle of the screen</p></li>
 <li><p>When you see an X, I want you to press the <strong>top left button</strong> (point to the corresponding button on the controller)</p></li>
 <li><p>When you see an O, I want you press the <strong>top right button</strong> (point to the corresponding button on the controller)</p></li>
 <li><p>Sometimes you will hear a beep. When you hear the beep, don’t press anything</p></li>
-<li><p>Let’s check, when you see an X what do you press? [participant points to X button], when we you an O what do you press [participant points to O button], and when you hear a beep, what do you do [don’t press anything]</p></li>
+<li><p>Let’s check, when you see an X what do you press? participant points to X button, when we you an O what do you press participant points to O button, and when you hear a beep, what do you do don’t press anything</p></li>
 <li><p><strong>Go as fast as you can, try not to make mistakes</strong>, and <strong>don’t wait for the beep.</strong></p></li>
 <li><p>Do you have any questions?</p></li>
 </ul></li>
+</ol>
+</div>
+<ol start="3" type="1">
 <li><p>Click <strong>Run Scenario</strong>.</p></li>
 <li><p>Audio Instructions will then start to re-explain the task.</p></li>
 <li><p>When ready, press <strong>Enter</strong> to start the task.</p></li>
@@ -485,7 +508,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/Schachar-Crosbie-Lab\.github\.io\/stop-nback-manual\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
