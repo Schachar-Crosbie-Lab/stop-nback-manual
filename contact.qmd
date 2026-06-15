@@ -4,6 +4,6 @@ title: "Contact Us!"
 
 ### Get in Touch
 
-**Email:** [pondsk.data\@sickkids.ca](mailto:pondsk.data@sickkids.ca)
+**Email:** {{< var email >}}
 
 Learn more about us at the [Crosbie Lab Website](https://lab.research.sickkids.ca/crosbie/)

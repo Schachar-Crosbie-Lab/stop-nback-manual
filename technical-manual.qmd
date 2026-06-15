@@ -32,9 +32,9 @@ After purchasing and downloading the software:
 
 7.  Highlight and copy (ctrl+c) the code back into your presentation window in Line 4. Click **Submit**
 
-This software comes with absolutely no warranty. Your feedback on these installation instructions is appreciated. Please send your comments or questions to **Crosbie Lab Email**
+This software comes with absolutely no warranty. Your feedback on these installation instructions is appreciated. Please send your comments or questions to {{< var email >}}.
 
-## Download the SchacharLabTaskFolder_v6.3.1 Folder
+## Download the {{< var tasks >}} Folder
 
 *These instructions assume that you can see the three-letter file extensions on your files. Please ensure that your file viewer allows you to see the extensions.*
 
@@ -47,10 +47,10 @@ This software comes with absolutely no warranty. Your feedback on these installa
 
 **For new task folder start here:**
 
-1.  Download the [**Zipped SchacharLabTaskFolder_v6.3.1**]{.fig-hover data-fig="fig-zip"} that was emailed to you on the research measures laptop’s desktop
+1.  Download the [**Zipped {{< var tasks >}}**]{.fig-hover data-fig="fig-zip"} that was emailed to you on the research measures laptop’s desktop
 2.  Right click on the folder and select **Extract All**
-3.  Remove the [**Zipped SchacharLabTaskFolder_v6.3.1**]{.fig-hover data-fig="fig-zip"}
-4.  You can place the [**Unzipped SchacharLabTaskFolder_v6.3.1**]{.fig-hover data-fig="fig-unzip"} Folder anywhere on the laptop that is convenient
+3.  Remove the [**Zipped {{< var tasks >}}**]{.fig-hover data-fig="fig-zip"}
+4.  You can place the [**Unzipped {{< var tasks >}}**]{.fig-hover data-fig="fig-unzip"} Folder anywhere on the laptop that is convenient
     -   If using a device that syncs with OneDrive or SharePoint ensure that the SchacharLabTaskFolder is excluded from syncing as those processes can remove local files to free up space without warning
     -   Do not add or remove files from inside the SchacharLabTaskFolder except for data transfers
 5.  Create a shortcut of PsychExp to run the tasks from your desktop without needing to open the folder each time:
@@ -67,7 +67,7 @@ This software comes with absolutely no warranty. Your feedback on these installa
 
 ## Check Task Settings
 
-Two files within the SchacharLabTaskFolder_v6.3.1 need to be verified by you to ensure the task will run correctly:
+Two files within the {{< var tasks >}} need to be verified by you to ensure the task will run correctly:
 
 -   [stopsignal.exp]{.fig-hover data-fig="fig-stexp"}
 
@@ -87,9 +87,9 @@ The .exp files contain configuration settings that are specific to the computer 
 
 1.  Double click **stopsignal.exp**
 2.  Presentation should open if the .exp file extension has been associated with the Presentation software. If it does not open then Presentation may be set up incorrectly.
-3.  On the Presentation **Main** tab, ensure the Logfile Directory is set to the SchacharLabTaskFolder_v6.3.1 Folder (for convenience you can copy that entire directory path as you will be using it a few more times).
-4.  On the **Scenarios** tab, again ensure the Logfile Directory is set to the SchacharLabTaskFolder_v6.3.1 Folder.
-5.  On the **Scenarios** tab, the Stimulus Directory should also be set to the SchacharLabTaskFolder_v6.3.1 Folder (the Scenarios box should have the stopsignal.sce file from the task file directory – this file is created each time you run the experiment with the parameters you choose).
+3.  On the Presentation **Main** tab, ensure the Logfile Directory is set to the {{< var tasks >}} Folder (for convenience you can copy that entire directory path as you will be using it a few more times).
+4.  On the **Scenarios** tab, again ensure the Logfile Directory is set to the {{< var tasks >}} Folder.
+5.  On the **Scenarios** tab, the Stimulus Directory should also be set to the {{< var tasks >}} Folder (the Scenarios box should have the stopsignal.sce file from the task file directory – this file is created each time you run the experiment with the parameters you choose).
 6.  On the **Parameters** tab, the default configuration is selected and the parameters data grid should be empty.
 7.  On the **Settings** tab please ensure the following tabs match the images below:
     -   [General @sec-genst]
@@ -193,11 +193,11 @@ Guidance for selecting appropriate settings if needed:
 
 2.  Presentation should open if the “.exp” file extension has been associated with the Presentation software. If it does not open then Presentation may be set up incorrectly.
 
-3.  On the Presentation **Main** tab, ensure the Logfile Directory is set to the SchacharLabTaskFolder_v6.3.1 Folder (for convenience you can copy that entire directory path as you will be using it a few more times).
+3.  On the Presentation **Main** tab, ensure the Logfile Directory is set to the {{< var tasks >}} Folder (for convenience you can copy that entire directory path as you will be using it a few more times).
 
-4.  On the **Scenarios** tab, again ensure the Logfile Directory is set to the SchacharLabTaskFolder_v6.3.1 Folder.
+4.  On the **Scenarios** tab, again ensure the Logfile Directory is set to the {{< var tasks >}} Folder.
 
-5.  On the **Scenarios** tab, the Stimulus Directory should also be set to the SchacharLabTaskFolder_v6.3.1 Folder (the Scenarios box should have the nback.sce file from the task file directory – this file is created each time you run the experiment with the parameters you choose).
+5.  On the **Scenarios** tab, the Stimulus Directory should also be set to the {{< var tasks >}} Folder (the Scenarios box should have the nback.sce file from the task file directory – this file is created each time you run the experiment with the parameters you choose).
 
 6.  On the **Parameters** tab, the default configuration is selected and the parameters data grid should be empty.
 

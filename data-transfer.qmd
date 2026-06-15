@@ -4,7 +4,7 @@ title: "Data Transfer"
 
 ## Task Output Data Folders
 
-When you run one of the tasks included in this task folder, it will save all task output data files in a sub-folder inside the **SchacharLabTaskFolder_v6.3.1 Folder**
+When you run one of the tasks included in this task folder, it will save all task output data files in a sub-folder inside the **{{< var tasks >}} Folder**
 
 -   SimpleStop
 
@@ -30,7 +30,7 @@ We recommend backing up your data output files frequently to ensure no data is l
 
 ### Process
 
-1.  Open **PsychExp** from the SchacharLabTaskFolder_v6.3.1 Folder or the shortcut from your Desktop.
+1.  Open **PsychExp** from the {{< var tasks >}} Folder or the shortcut from your Desktop.
 
 <!-- -->
 
@@ -42,7 +42,7 @@ We recommend backing up your data output files frequently to ensure no data is l
 
 ![](img/dt3.png){fig-align="center"}
 
-4.  To access the task output data files (the .dat, .raw, .dbg, and .log files), open the **SchacharLabTaskFolder_v6.3.1 Folder** and then open the task subfolder SimpleStop or NBack
+4.  To access the task output data files (the .dat, .raw, .dbg, and .log files), open the **{{< var tasks >}} Folder** and then open the task subfolder SimpleStop or NBack
 
 ### Clean
 
@@ -58,7 +58,7 @@ We recommend backing up your data output files frequently to ensure no data is l
 
 5.  If you have previously sent data ensure the current folder only contains NEW POND data and do not re-send previously sent data as it will cause files to duplicate
 
-6.  Email [**crosbielab.admin\@sickkids.ca**](mailto:crosbielab.admin@sickkids.ca)if you would like to receive a list of previously sent POND IDs to confirm which files to exclude
+6.  Email {{< var email >}} if you would like to receive a list of previously sent POND IDs to confirm which files to exclude
 
 ### Send
 
@@ -75,7 +75,7 @@ We recommend backing up your data output files frequently to ensure no data is l
 
 ![](img/dt9.png){fig-align="center"}
 
-5.  Send the zipped folder by email **Crosbie Lab (crosbielab.admin\@sickkids.ca)** using the subject line: yourpondsitename Stop & NBack POND Data quarter year (e.g., SickKids Stop & NBack POND Data Q1 2026) and include a note in the body of the email if there are notes in the task .csv file to resolve
+5.  Send the zipped folder by email to {{< var email >}} using the subject line: yourpondsitename Stop & NBack POND Data quarter year (e.g., SickKids Stop & NBack POND Data Q1 2026) and include a note in the body of the email if there are notes in the task .csv file to resolve
 
 ![](img/dt10.png){fig-align="center"}
 

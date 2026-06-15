@@ -13,15 +13,11 @@ website:
       - interpretation.qmd
       - data-transfer.qmd
       - contact.qmd
-    tools:
-      - text: "Contact Us"
-        icon: envelope
-        href: mailto:pondsk.data@sickkids.ca
-  sidebar: 
-    tools:
-      - text: "Contact Us"
-        icon: envelope
-        href: mailto:pondsk.data@sickkids.ca
+  # sidebar: 
+  #   style: "docked"
+  #   contents:
+  #     - text: "<i class='bi bi-envelope'></i> Contact Us!"
+  #       href: mailto:pondsk.data@sickkids.ca
   page-footer:
     right: 
       - "Copyright Dr. Russell Schachar, 2002-2013 <br> Version date: March 2026 <br> Not to be distributed outside approved research team members"

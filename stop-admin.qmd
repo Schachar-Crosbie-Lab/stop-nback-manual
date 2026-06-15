@@ -15,7 +15,7 @@ The task will run for **4 experimental blocks and 1 practice block, with 24 tria
 ::: {#tip-shorcut .callout-tip}
 ## Make a PsychExp Shortcut
 
-To launch the task from the Desktop, instead of having to navigate to the SchacharLabTaskFolder_v6.3.1 Folder each time you run a participant, create a PsychExp shortcut on the Desktop from the Task Folder (steps available in [Technical Manual](technical-manual.qmd))
+To launch the task from the Desktop, instead of having to navigate to the {{< var tasks >}} Folder each time you run a participant, create a PsychExp shortcut on the Desktop from the Task Folder (steps available in [Technical Manual](technical-manual.qmd))
 :::
 
 ![PsychExp Icon](img/run06.png){#fig-pe}
@@ -76,7 +76,7 @@ This process must be completed **every time** the task is administered
 **Important Controls:**
 
 |  |  |  |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **Button**  | **Actions**  | **When to Use**  |
 | **X** | Correct response | When a participant sees an X (and doesn’t hear a beep) |
 | **O** | Correct response | When a participant sees an O (and doesn’t hear a beep) |
@@ -146,7 +146,7 @@ White screens with text appear between blocks when the game determines the parti
 The messages that you will see are:
 
 |  |  |  |  |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | **White Screen Trigger** | **Text on White Screen** | **What Participant is likely doing Wrong** | **Feedback to be provided to Participant** |
 | There are 0 trials with responses | **No responses were detected**. | Participant **did not press** the X nor the O button or they may be pressing the **wrong buttons** on the controller. | Review buttons with participant and remind participant to press X or O buttons when prompted. |
 | If the **percent of correct responses** on go trials \<= 50% | **You may be pressing the wrong button.** | Participant likely **mixing up** the X and O buttons or pressing the wrong buttons. | Review buttons with participant. |
